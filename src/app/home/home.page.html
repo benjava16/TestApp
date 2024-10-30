@@ -8,9 +8,20 @@
 
 <ion-content [fullscreen]="true">
   <app-login></app-login>
+
 </ion-content>
 
 
 <ion-footer [translucent]="true">
-  <ion-toolbar class="uno"></ion-toolbar>
+  <ion-toolbar class="uno">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="block" color="primary" (click)="irLoginProfe()">Ingresar como docente</ion-button>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+  
 </ion-footer>

@@ -26,7 +26,7 @@
             <img alt="Registro" src="https://cdn-icons-png.flaticon.com/512/6556/6556653.png" />
           </ion-thumbnail>
           <!--<ion-label>Horario de clases</ion-label>-->
-          <a [routerLink]="['/registro']">Registro de asistencia</a>
+          <a [routerLink]="['/registro']">Generar QR de control de asistencia</a>
         </ion-item>
 
         <!--Horario-->
@@ -53,7 +53,7 @@
             <img alt="Notas" src="https://cdn-icons-png.flaticon.com/256/4854/4854585.png" />
           </ion-thumbnail>
           <!--<ion-label>Notas</ion-label>-->
-          <a [routerLink]="['/notas']">Notas</a>
+          <a [routerLink]="['/notas']">Registro de notas</a>
         </ion-item>
         
         <!--Asistencias-->
@@ -62,7 +62,7 @@
             <img alt="Asistencias" src="https://cdn-icons-png.flaticon.com/512/4854/4854344.png" />
           </ion-thumbnail>
           <!--<ion-label>Asistencias</ion-label>-->
-          <a [routerLink]="['/asistencias']">Asistencias</a>
+          <a [routerLink]="['/asistencias']">Registro de asistencia</a>
         </ion-item>
       </ion-list>
     </ion-card-content>
@@ -72,7 +72,7 @@
 <!--Botón Cerrar sesión-->
 <ion-toolbar>
   <ion-buttons slot="primary">
-    <ion-button color="primary"> Cerrar sesión </ion-button>
+    <ion-button color="primary" (click)="logout()" > Cerrar sesión </ion-button>
   </ion-buttons>
 </ion-toolbar>
 

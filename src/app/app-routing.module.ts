@@ -45,6 +45,10 @@ const routes: Routes = [
     path: 'vista-prof',
     loadChildren: () => import('./vista-prof/vista-prof.module').then( m => m.VistaProfPageModule)
   },
+  {
+    path: 'home-profe',
+    loadChildren: () => import('./home-profe/home-profe.module').then( m => m.HomeProfePageModule)
+  },
 ];
 
 @NgModule({
