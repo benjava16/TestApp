@@ -72,7 +72,7 @@
 <!--Botón Cerrar sesión-->
 <ion-toolbar>
   <ion-buttons slot="primary">
-    <ion-button color="primary" [routerLink]="['/home']"> Cerrar sesión </ion-button>
+    <ion-button color="primary" (click)="logout()"> Cerrar sesión </ion-button>
   </ion-buttons>
 </ion-toolbar>
 
