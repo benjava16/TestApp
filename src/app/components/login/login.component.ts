@@ -21,6 +21,7 @@ export class LoginComponent  implements OnInit {
       this.router.navigate(['/inicio']);
     }catch(error){
       console.error("Error en el login: ", error);
+      alert("No se ha podido iniciar sesión");
     }
   }
 
@@ -29,6 +30,7 @@ export class LoginComponent  implements OnInit {
       await this.authService.register(this.email, this.password);
     }catch(error){
       console.error("Problemas al registrar el usuario: ",error);
+      alert("No se ha podido crear el usuario");
     }
   }
 

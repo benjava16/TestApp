@@ -1,14 +1,22 @@
-<form (ngSubmit)="login">
+<form (ngSubmit)="login()">
   <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="email" [(ngModel)]="email" name="email">email</ion-input>
+    <ion-avatar slot="start">
+      <img alt="User" src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo.png" />
+    </ion-avatar>
+    <ion-label position="floating" labelPlacement="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Ingrese su correo electronico" labelPlacement="floating"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" [(ngModel)]="password" name="password">Password</ion-input>
+    <ion-avatar slot="start">
+      <img alt="Password" src="https://w7.pngwing.com/pngs/708/705/png-transparent-password-manager-password-safe-android-blue-electric-blue-advanced-encryption-standard-thumbnail.png" />
+    </ion-avatar>
+    <ion-label position="floating" labelPlacement="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Ingrese su contraseña" labelPlacement="floating"></ion-input>
   </ion-item>
-
-  <ion-button expand="full" color="warning" type="submit">Login</ion-button>
+  <div>
+  <ion-button color="primary" type="submit">Iniciar sesión</ion-button>
+  </div>
 </form>
-
-<ion-button color="danger" expand="full" (click)="register()">registrar</ion-button>
+<div>
+  <ion-button color="primary" (click)="register()">Registrar</ion-button>
+</div>
